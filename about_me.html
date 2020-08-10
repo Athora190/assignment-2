@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jade Marte</title>
+</head>
+<style>
+    .buttontest {
+        border-radius: 4px;
+        border: none;
+        color: #FFFFFF;
+        text-align: center;
+        font-size: 28px;
+        padding: 20px;
+        width: 200px;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 5px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+}
+
+    .buttontest span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+    }
+
+    .buttontest span:after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+    }
+
+    .buttontest:hover span {
+        padding-right: 25px;
+    }
+
+    .buttontest:hover span:after {
+        opacity: 1;
+        right: 0;
+    
+    }
+    .pic{
+        margin: auto;
+        width: 50%;
+        padding: 10px; 
+    }
+    h1
+    {
+        text-align: center;
+        margin: 50px;
+        background-color: rgb(130, 7, 246);
+        padding: 40px; 
+        padding-left: auto;
+        padding-right: auto;      
+    }
+    .aboutme
+    {
+        display: inline;
+        text-align: center;
+        color: darkblue;
+        font-family: fantasy;
+        font-size: 20px;
+    }
+    h3
+    {
+        text-shadow:0 0 3px #FF0000, 0 0 5px #0000FF;
+        color:darkorchid;
+        font-size: 30px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .interests
+    {
+        display: block;
+        font-size: 30px;
+        color:darkmagenta;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    }
+</style>
+<body>
+    <h1>Jade Marte</h1>
+    <div class="pic">
+        <img src="https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569_960_720.jpg">
+    </div>
+    <div class="aboutme">
+        <p>Salutations, my name is Jade Marte. I am the middle daugther of my family,
+            I tend to be very forgetful and lazy, however I have been working on becoming 
+            more productive. I have two other sisters one being my identical twin, an important fact about being a twin 
+            is that in my whole family my twin and I are the only pare of twin to be alive. My mother is remarried, after divorcing my birth father 
+            a long time ago. I'm also a latina which means I have a very big family who I love and adore always even though I never met some of them. 
+        </p>
+    </div>
+    
+        <h3>Here is a list of things I like to do:</h3>
+        <div class="interests">
+        <ul>
+            <li>video Games</li>
+            <li>digital drawing</li>
+            <li>Coding</li>
+            <li>writing stories</li>
+            <li>taking care of my pets</li>
+            <li>space</li>
+        </ul>
+    </div> 
+    <div >
+        <a href="somethingfunny.html">
+            <button class="buttontest" style="background-color: cornflowerblue;"><span>Don't press </span></button>
+        </a>
+    </div>
+</body>
+</html>
